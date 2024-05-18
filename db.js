@@ -16,4 +16,4 @@ dbConn.connect((err) => {
     }
 });
 
-module.exports = connection;
+module.exports = dbConn;
