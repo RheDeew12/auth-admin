@@ -1,13 +1,13 @@
 const mysql = require('mysql');
 
-const connection = mysql.createConnection({
+const dbConn = mysql.createConnection({
     host: "34.34.217.53",
     user: "root",
     password: "",
     database: "konsultasi-dokter",
 });
 
-connection.connect((err) => {
+dbConn.connect((err) => {
     if (err) {
         console.error('Error connecting to the database:', err.message);
         process.exit(1);
